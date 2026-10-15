@@ -1,0 +1,29 @@
+_templates_suffix: "tmpl"
+
+adpm_name:
+  type: str
+  help: general name of the adpm
+
+document_id:
+  str:
+  help: the reference identification
+  default: "S1POP-ADPM-XXX"
+
+repository_url:
+  type: str
+  help: the target repository of this instance of ADPM 
+
+creator_name:
+  type: str
+  help: main author of the document
+
+organization:
+  type: str
+
+
+email:
+    type: str
+    # Notice that both `creator_name` and `organization` have been already asked
+    default: "{{ creator_name }}@{{ organization }}.com"
+
+

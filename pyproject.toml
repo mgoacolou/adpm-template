@@ -20,6 +20,22 @@ classifiers = [
     "Topic :: Scientific/Engineering",
 ]
 
+dependencies = [
+    "build>=1.5.0",
+    "furo>=2025.12.19",
+    "ipykernel>=7",
+    "matplotlib>=3.9",
+    "nbsphinx>=0.9",
+    "numpy>=2",
+    "pypandoc-binary>=1.17",
+    "ruff>=0.16.4",
+    "sphinx>=8",
+    "sphinx-rtd-theme>=3.1.0",
+    "sphinxcontrib-spelling>=8.0.2",
+    "twine>=7.0.0",
+    "just"
+]
+
 
 [project.urls]
 Homepage = "https://github.com/s1tools/adpm-template"
@@ -29,7 +45,7 @@ Issues = "https://github.com/s1tools/adpm-template/issues"
 
 [tool.ruff]
 # Set the maximum line length to 79.
-line-length = 79
+line-length = 120
 
 
 [tool.ruff.lint]
